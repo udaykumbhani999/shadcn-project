@@ -4,7 +4,10 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "@/components/ui/Accordion";
+import { AlertDialogDemo } from "./components/manual/AlertDialogDemo";
+import { CardWithForm } from "./components/manual/CardWithForm";
+import { ChartData } from "./components/manual/chartData";
 
 function App() {
   return (
@@ -36,9 +39,17 @@ function App() {
           </AccordionItem>
         </Accordion>
       </div>
+      <div className="alert-dialog-demo">
+        <AlertDialogDemo />
+      </div>
+      <div className="card-demo">
+        <CardWithForm />
+      </div>
+      <div className="ChartData-demo w-full">
+        <ChartData />
+      </div>
     </div>
   );
 }
 
 export default App;
-
