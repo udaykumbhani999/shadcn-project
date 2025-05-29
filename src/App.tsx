@@ -7,7 +7,10 @@ import {
 } from "@/components/ui/Accordion";
 import { AlertDialogDemo } from "./components/manual/AlertDialogDemo";
 import { CardWithForm } from "./components/manual/CardWithForm";
-import { ChartData } from "./components/manual/chartData";
+import { ChartData } from "./components/manual/ChartData";
+import { DataTableDemo } from "./components/manual/DataTableDemo";
+import { DialogDemo } from "./components/manual/DialogDemo";
+import { DrawerDemo } from "./components/manual/DrawerDemo";
 
 function App() {
   return (
@@ -39,14 +42,19 @@ function App() {
           </AccordionItem>
         </Accordion>
       </div>
-      <div className="alert-dialog-demo">
+      <div className="alert-dialog-demo flex items-center justify-center gap-2">
         <AlertDialogDemo />
+        <DialogDemo />
+        <DrawerDemo />
       </div>
       <div className="card-demo">
         <CardWithForm />
       </div>
       <div className="ChartData-demo w-full">
         <ChartData />
+      </div>
+      <div className="Table-demo w-full bg-white">
+        <DataTableDemo />
       </div>
     </div>
   );
