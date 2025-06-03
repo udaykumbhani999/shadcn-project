@@ -1,9 +1,14 @@
 import "./App.css";
+import Layout from "./components/manual/Layout";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center bg-gray-200">
-     
+    <div >
+      <div>
+        <Layout  />
+      </div>
+      
+      
     </div>
   );
 }

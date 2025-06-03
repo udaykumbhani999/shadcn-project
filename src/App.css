@@ -1,0 +1,26 @@
+.sidebar-active-curve::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 32px;
+  height: 100%;
+  background: #f75c5c;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  z-index: 0;
+  /* Optional: add a subtle shadow for depth */
+  box-shadow: 2px 0 8px 0 #f75c5c33;
+}
+.group .peer.text-sidebar-foreground.hidden.md\:block {
+  max-width: 200px;
+}
+.relative.w-\(--sidebar-width\).bg-transparent.transition-\[width\].duration-200.ease-linear.group-data-\[collapsible\=offcanvas\]\:w-0.group-data-\[side\=right\]\:rotate-180.group-data-\[collapsible\=icon\]\:w-\(--sidebar-width-icon\) {
+  max-width: 200px;
+}
+.fixed.inset-y-0.z-10.h-svh.transition-\[left\,right\,width\].duration-200.ease-linear.md\:flex.left-0.group-data-\[collapsible\=offcanvas\]\:left-\[calc\(var\(--sidebar-width\)\*-1\)\].group-data-\[collapsible\=icon\]\:w-\(--sidebar-width-icon\).group-data-\[side\=left\]\:border-r.group-data-\[side\=right\]\:border-l.w-50.min-h-screen.bg-white.flex.flex-col {
+  border-right: 0;
+}
+.bg-transparent {
+  background-color: #f7f8f9;
+}
